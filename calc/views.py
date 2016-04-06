@@ -23,12 +23,12 @@ def division(request, num1, num2):
     return HttpResponse(respuesta)
 
 def notfound(request):
-    respuesta = "<br>El formato correcto es:"
+    respuesta = "<br>El formato correcto es:<ul>"
     respuesta += "<li>num1+num2"
     respuesta += "<li>num1-num2"
     respuesta += "<li>num1*num2"
-    respuesta += "<li>num1/num2 donde num2 es distinto de 0</li>"
-    respuesta += "<br>Los numeros pueden ser positivos o negativos, "
+    respuesta += "<li>num1/num2 donde num2 es distinto de 0</li></ul>"
+    respuesta += "Los numeros pueden ser positivos o negativos, "
     respuesta += "basta con poner un signo menos delante (sin parentesis)"
     respuesta += "<br>Y solo se devuelven numeros enteros"
     return HttpResponse(respuesta)
